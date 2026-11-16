@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: Illuminate
+  name: chat-radio-illuminate
+  keycode: "3"
+  frequency: 1703
+  color: "#ff8300"
+  longRange: true

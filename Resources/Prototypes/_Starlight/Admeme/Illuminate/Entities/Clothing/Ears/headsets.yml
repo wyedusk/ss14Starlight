@@ -1,0 +1,16 @@
+- type: entity
+  parent: [ ClothingHeadset, BaseIlluminateContraband ]
+  id: ClothingHeadsetIlluminate
+  name: Illuminate headset
+  description: A headset used by Illuminate members
+  components:
+    - type: Headset
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyIlluminate
+          - EncryptionKeyCommon
+    - type: Sprite
+      sprite: _Starlight/Admeme/Illuminate/Clothing/Ears/Headsets/illuminate.rsi
+    - type: Clothing
+      sprite: _Starlight/Admeme/Illuminate/Clothing/Ears/Headsets/illuminate.rsi

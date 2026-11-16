@@ -71,3 +71,7 @@
 - type: contrabandType
   id: ETO
   name: contraband-type-eto
+
+- type: contrabandType
+  id: Illuminate
+  name: contraband-type-Illuminate

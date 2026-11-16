@@ -1,0 +1,42 @@
+- type: entity
+  id: IlluminateTechFab
+  parent: BaseLatheLube
+  name: Illuminate techfab
+  description: Prints equipment for Illuminate members.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - sprite: &base-rsi Structures/Machines/techfab.rsi
+      state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - sprite: _Starlight/Admeme/Illuminate/Structures/Machines/techfab.rsi
+      state: illuminate
+    - sprite: *base-rsi
+      state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - sprite: *base-rsi
+      state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - sprite: *base-rsi
+      state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticPacks:
+    - IlluminateImplants
+    #- MedTakAmmoStatic
+    #- MedTakImplants
+    - TopicalsStatic
+    #- ChemistryStatic
+    #- MedicalClothingStatic
+    #- StarlightMedicalStatic
+    - StarlightSurgeryDynamic
+    #- StarlightAutomendersDynamic
+    #- StarlightCyberlimbDynamic
+    #- StarlightCyberOrgansDynamic
+    #- StarlightImplantDynamic
+    #- StarlightBudgetCyberOrgansDynamic
+    #- SecurityCyberLimbs

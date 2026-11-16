@@ -1,0 +1,21 @@
+# TODO: formalwear for illuminate representative
+
+- type: startingGear
+  id: IlluminateGroundFleetTroop
+  equipment:
+    jumpsuit: ClothingUniformIlluminateGround
+    shoes: ClothingShoesBootsIlluminateGround
+    eyes: ClothingEyesVisorIlluminate
+    ears: ClothingHeadsetIlluminate
+    id: IlluminatePDAGroundFleetTroop
+
+- type: startingGear
+  id: IlluminateGroundFleetLeader
+  equipment:
+    jumpsuit: ClothingUniformIlluminateGround
+    shoes: ClothingShoesBootsIlluminateGround
+    eyes: ClothingEyesVisorIlluminate
+    ears: ClothingHeadsetIlluminate
+    id: IlluminatePDAGroundFleetLeader
+
+# TODO: space fleet leader equipment

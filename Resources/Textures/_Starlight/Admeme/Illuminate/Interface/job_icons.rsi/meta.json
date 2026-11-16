@@ -1,0 +1,30 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "wyedusk (GitHub)",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "Illuminate"
+        },
+        {
+            "name": "IlluminateGroundFleetTroop"
+        },
+        {
+            "name": "IlluminateGroundFleetLeader"
+        },
+        {
+            "name": "IlluminateSpaceFleetTroop"
+        },
+        {
+            "name": "IlluminateSpaceFleetLeader"
+        },
+        {
+            "name": "Illuminate_Mindshield",
+            "delays": [[ 0.1, 0.1 ]]
+        }
+    ]
+}

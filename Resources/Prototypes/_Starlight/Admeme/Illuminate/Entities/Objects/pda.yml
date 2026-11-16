@@ -1,0 +1,116 @@
+# TODO: fix pda border!! it doesn't match the pda itself!! i don't know how..
+
+- type: entity
+  parent: [ BasePDA, BaseIlluminateContraband ]
+  id: BaseIlluminatePDA
+  abstract: true
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType: "pda-illuminate"
+  - type: PdaBorderColor
+    accentVColor: "#d7d7d0"
+    borderColor: "#e17900"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - AstroNavCartridge
+      - NanoChatCartridge
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+
+- type: entity
+  parent: BaseIlluminatePDA
+  id: IlluminatePDA
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/pda.rsi
+      layers:
+      - sprite: _Starlight/Admeme/Illuminate/Objects/pda.rsi
+        map: [ "enum.PdaVisualLayers.Base" ]
+        state: "illuminate"
+      - state: "light_overlay"
+        map: [ "enum.PdaVisualLayers.Flashlight" ]
+        shader: "unshaded"
+        visible: false
+      - state: "id_overlay"
+        map: [ "enum.PdaVisualLayers.IdLight" ]
+        shader: "unshaded"
+        visible: false
+    - type: Icon
+      sprite: _Starlight/Admeme/Illuminate/Objects/pda.rsi
+      state: illuminate
+
+- type: entity
+  parent: BaseIlluminatePDA
+  id: IlluminatePDASpace
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/pda.rsi
+      layers:
+      - sprite: _Starlight/Admeme/Illuminate/Objects/pda.rsi
+        map: [ "enum.PdaVisualLayers.Base" ]
+        state: "illuminate_space"
+      - state: "light_overlay"
+        map: [ "enum.PdaVisualLayers.Flashlight" ]
+        shader: "unshaded"
+        visible: false
+      - state: "id_overlay"
+        map: [ "enum.PdaVisualLayers.IdLight" ]
+        shader: "unshaded"
+        visible: false
+    - type: Icon
+      sprite: _Starlight/Admeme/Illuminate/Objects/pda.rsi
+      state: illuminate_space
+
+- type: entity
+  parent: IlluminatePDA
+  id: IlluminatePDARepresentative
+  name: Illuminate representative PDA
+  description: PDA issued to Illuminate representatives.
+  components:
+  - type: Pda
+    id: IlluminateIDCardRepresentative
+
+- type: entity
+  parent: IlluminatePDA
+  id: IlluminatePDAGroundFleetTroop
+  name: Illuminate ground fleet troop PDA
+  description: PDA issued to Illuminate ground fleet troops.
+  components:
+  - type: Pda
+    id: IlluminateIDCardGroundFleetTroop
+
+- type: entity
+  parent: IlluminatePDA
+  id: IlluminatePDAGroundFleetLeader
+  name: Illuminate ground fleet leader PDA
+  description: PDA issued to Illuminate ground fleet leaders.
+  components:
+  - type: Pda
+    id: IlluminateIDCardGroundFleetLeader
+
+- type: entity
+  parent: IlluminatePDASpace
+  id: IlluminatePDASpaceFleetTroop
+  name: Illuminate space fleet troop PDA
+  description: PDA issued to Illuminate space fleet troops.
+  components:
+  - type: Pda
+    id: IlluminateIDCardSpaceFleetTroop
+
+- type: entity
+  parent: IlluminatePDASpace
+  id: IlluminatePDASpaceFleetLeader
+  name: Illuminate space fleet leader PDA
+  description: PDA issued to Illuminate space fleet leaders.
+  components:
+  - type: Pda
+    id: IlluminateIDCardSpaceFleetLeader

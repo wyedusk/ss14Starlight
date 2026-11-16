@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ ClothingShoesMilitaryBase, BaseIlluminateContraband ]
+  id: ClothingShoesBootsIlluminateGround
+  name: Illuminate ground fleet boots
+  description: Standard issue Illuminate ground fleet boots.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Admeme/Illuminate/Clothing/Shoes/Boots/illuminateground.rsi
+    - type: Clothing
+      sprite: _Starlight/Admeme/Illuminate/Clothing/Shoes/Boots/illuminateground.rsi

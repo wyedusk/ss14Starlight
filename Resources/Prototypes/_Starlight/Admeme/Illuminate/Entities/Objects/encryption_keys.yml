@@ -1,0 +1,25 @@
+- type: entity
+  parent: [ EncryptionKey, BaseIlluminateContraband, BaseContrabandTier3 ]
+  id: EncryptionKeyIlluminate
+  name: Illuminate encryption key
+  description: An encryption key used by Illuminate members.
+  components:
+    - type: EncryptionKey
+      channels:
+        - Illuminate
+      defaultChannel: Illuminate
+    - type: Sprite
+      layers:
+        - sprite: _Starlight/Admeme/Illuminate/Objects/encryption_keys.rsi
+          state: crypt_illuminate
+        - sprite: _Starlight/Admeme/Illuminate/Objects/encryption_keys.rsi
+          state: illuminate_label
+
+- type: entity
+  parent: EncryptionKeyIlluminate
+  id: EncryptionKeyIlluminateUnremovable
+  name: Illuminate encryption key
+  description: An encryption key used by Illuminate members.
+  suffix: Unremovable
+  components:
+  - type: Unremoveable

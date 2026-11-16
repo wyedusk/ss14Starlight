@@ -1,0 +1,24 @@
+- type: entity
+  parent: [ ClothingEyesBase, BaseIlluminateContraband, BaseContrabandTier3 ]
+  id: ClothingEyesVisorIlluminate
+  name: Illuminate visor
+  description: A Nexus-linked visor for Illuminate members.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Admeme/Illuminate/Clothing/Eyes/Glasses/illuminatevisor.rsi
+  - type: Clothing
+    sprite: _Starlight/Admeme/Illuminate/Clothing/Eyes/Glasses/illuminatevisor.rsi
+  - type: FlashImmunity
+    blocksSpecialVision: False
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Hybrid
+  - type: Tag
+    tags:
+    - HudMedical
+    - CorgiWearable
+  - type: EyeProtection
+    protectionTime: 5

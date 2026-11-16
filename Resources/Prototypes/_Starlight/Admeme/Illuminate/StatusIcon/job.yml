@@ -1,0 +1,53 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminate
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: Illuminate
+  jobName: job-name-illuminate
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminateRepresentative
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: Illuminate
+  jobName: job-name-illuminate-representative
+  allowSelection: false
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminateGroundFleetTroop
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: IlluminateGroundFleetTroop
+  jobName: job-name-illuminate-groundfleet-troop
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminateGroundFleetLeader
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: IlluminateGroundFleetLeader
+  jobName: job-name-illuminate-groundfleet-leader
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminateSpaceFleetTroop
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: IlluminateSpaceFleetTroop
+  jobName: job-name-illuminate-spacefleet-troop
+  allowSelection: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIlluminateSpaceFleetLeader
+  icon:
+    sprite: /Textures/_Starlight/Admeme/Illuminate/Interface/job_icons.rsi
+    state: IlluminateSpaceFleetLeader
+  jobName: job-name-illuminate-spacefleet-leader
+  allowSelection: false

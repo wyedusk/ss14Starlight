@@ -1,0 +1,12 @@
+- type: entity
+  parent: [ ClothingUniformBase, BaseIlluminateContraband ]
+  id: ClothingUniformIlluminateGround
+  name: Illuminate ground fleet uniform
+  description: Standard issue Illuminate ground fleet uniform.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Admeme/Illuminate/Clothing/Uniforms/Jumpsuit/illuminateground.rsi
+  - type: Clothing
+    sprite: _Starlight/Admeme/Illuminate/Clothing/Uniforms/Jumpsuit/illuminateground.rsi
+  - type: Tag
+    tags: []

@@ -126,6 +126,14 @@
     tier: Tier4 # Blimpuf
     contrabandType: MedTak # Blimpuf
 
+- type: entity
+  id: BaseIlluminateContraband
+  abstract: true
+  components:
+  - type: ScanDetectable
+  - type: Contraband
+    contrabandType: Illuminate # TODO: make this somehow not show as contra with Illuminate access?
+
 # Scurrets
 - type: entity
   id: BaseEmotionalSupportScurretContraband
